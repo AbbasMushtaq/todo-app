@@ -35,14 +35,10 @@ export default function Footer() {
                                         src="/Abbas-dp.jpeg"
                                         alt="Abbas Mushtaq"
                                         fill
-                                        className="object-cover"
-                                        onError={(e) => {
-                                            // Fallback if image fails to load
-                                            const target = e.target as HTMLImageElement;
-                                            target.style.display = 'none';
-                                        }}
+                                        className="object-cover z-20"
+                                        priority
                                     />
-                                    <div className="flex items-center justify-center h-full w-full bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900 -z-10">
+                                    <div className="flex items-center justify-center h-full w-full bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900 z-10">
                                         <Code2 size={40} className="text-primary/50" />
                                     </div>
                                 </div>
